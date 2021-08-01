@@ -17,7 +17,7 @@ xhr.onload = function () {
   if (this.status === 200) {
     let json = JSON.parse(this.responseText);
     let articles = json.articles;
-    // console.log(articles);
+    console.log(json);
     let newsHtml = "";
     articles.forEach(function (element, index) {
       //   console.log(element, index);
