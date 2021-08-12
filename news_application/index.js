@@ -50,8 +50,27 @@ xhr.onload = function () {
       newsHtml += news;
     });
     newsAccrdian.innerHTML = newsHtml;
+    console.log('Ajax')
   } else {
     console.log("Some error occured");
   }
 };
+console.log('sssss')
 xhr.send();
+
+
+// const abc={sak:"jaiswal",
+// college:"NIT",
+// city:{
+//   india:"Uttarakhand"
+// }}
+
+// abc.college
+// abc=
+// console.log(sakshm())
+// const x=5
+// const y=10
+
+// function saksham (){
+//   console.log('dddd')
+// }

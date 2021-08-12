@@ -18,6 +18,7 @@ xhr.onload = function () {
     const showScore = document.querySelector("#showScore");
 
     let json = JSON.parse(this.responseText);
+    // console.log(answers)
     // let articles = json.group;
     // console.log(json[0].name);
     // let questionHtml = "";
@@ -66,12 +67,14 @@ xhr.onload = function () {
           <button class='btn' onclick="location.reload()">Restart Again</button>
           `;
         showScore.classList.remove("scoreArea");
+        console.log('ss')
       }
     });
   } else {
     console.log("Some error occured");
   }
 };
+
 xhr.send();
 
 // Question Format
